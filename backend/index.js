@@ -20,9 +20,9 @@ app.get("/bfhl", (req, res) => {
 // POST Endpoint
 app.post("/bfhl", (req, res) => {
   const data = req.body.data || [];
-  const userId = "john_doe_17091999";
-  const email = "john@xyz.com";
-  const rollNumber = "ABCD123";
+  const userId = "Arnab Ghosh";
+  const email = "arnab.ghsoh2021@vitstudent.ac.in";
+  const rollNumber = "21BIT0414";
   const isSuccess = true;
 
   const numbers = data.filter((item) => !isNaN(item));
