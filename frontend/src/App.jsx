@@ -24,7 +24,7 @@ function App() {
     try {
       const parsedInput = JSON.parse(jsonInput);
       const response = await axios.post(
-        "http://localhost:3000/bfhl",
+        "https://bajaj-placement-problem.onrender.com/bfhl",
         parsedInput
       );
       setResponseData(response.data);
@@ -63,6 +63,9 @@ function App() {
 
   return (
     <div className="container">
+      <h6>
+        the backend is hosted on the render.com in so it is slow to get response
+      </h6>
       <h1>REST API Frontend</h1>
       <div className="input-container">
         <label>API Input</label>
